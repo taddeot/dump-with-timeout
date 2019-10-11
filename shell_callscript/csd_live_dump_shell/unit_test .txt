@@ -1,0 +1,29 @@
++++++++++++++++++++++++++++++
+For the convenience of testing, the storage and naming of files does not conform to the specifications.
+When using it officially, please set the path and name of the file first!!!
+========================
+
+========================
+
+1. $cd dump&encrypt/
+
+2. $./livedump.sh :
+
+1) livedump1:fail 
+  livedump2:success   
+  livedump3:fail 
+  livedump4success
+  livedump5:fail
+2)Generated conf and tmp folders and subfolders
+3)Generated files :csd_encd_file.tar.gz and original data
+
+3.$cp tmp/CSD_PACK/csd_encd_file.tar.gz ../decrypt/
+
+4. cd ../decrypt/
+4.  ./dec_package.sh csd_encd_file.tar.gz:
+1)Result:
+[2019-03-20_15-32-10] +++++++++ Start ++++++++
+
+[2019-03-20_15-32-10] MD5 value is the same, decryption is complete.
+[2019-03-20_15-32-11] ========= END ================
+2)get tmp/CSD_PACK/csd_dec_final.tar.gz
